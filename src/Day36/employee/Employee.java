@@ -5,13 +5,10 @@ public class Employee {
     public int age,id;
     public double salary;
 
-    public void setInfo(String name, String jobTitle, int age, int id, double salary) {
-        this.name = name;
-        this.jobTitle = jobTitle;
-        this.age = age;
-        this.id = id;
+    public Employee(double salary) {
         this.salary = salary;
     }
+
     public void work(){
         System.out.println(name+" is working");
     }

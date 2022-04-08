@@ -4,12 +4,12 @@ public class Phone {
     public String brand,model,size,color;
     public double price;
 
-    public void setInfo(String brand,String model,String size,double price,String color){
+    public Phone(String brand, String model, String size, String color, double price) {
         this.brand = brand;
         this.model = model;
         this.size = size;
-        this.price = price;
         this.color = color;
+        this.price = price;
     }
 
     public void call(long phoneNumber){
