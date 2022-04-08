@@ -4,11 +4,14 @@ public class Book {
     public String title,type,author;
     public double price;
 
-    public void setInfo(String title, String type, String author, double price) {
+    public Book(String title, String type, String author, double price) {
         this.title = title;
         this.type = type;
         this.author = author;
         this.price = price;
+    }
+    public void readBook(){
+        System.out.println(author+" is reading this book");
     }
 
     public String toString() {
