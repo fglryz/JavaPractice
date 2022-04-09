@@ -11,7 +11,7 @@ public class Book {
         this.price = price;
     }
     public void readBook(){
-        System.out.println(author+" is reading this book");
+        System.out.println("people is reading this book");
     }
 
     public String toString() {
