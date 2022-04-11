@@ -52,7 +52,7 @@ public class Browser {
 
         @Override
         public void closeBrowser() {
-            System.out.println("closing safari browser");
+            System.out.println("closing safari browser" );
 
         }
     }
