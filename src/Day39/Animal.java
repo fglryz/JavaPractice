@@ -83,10 +83,11 @@ public class Animal {
     }
 
     public void setGender(char gender) {
-        if(!(gender=='M')||(!(gender=='F'))){
+        if(!(gender=='M')&&(!(gender=='F'))){
             System.err.println("it is invalid gender");
 
         }
+        System.out.println("Invalid gender");
         System.exit(1);
         this.gender = gender;
     }

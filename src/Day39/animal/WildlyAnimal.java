@@ -41,6 +41,20 @@ public void hunt(){
     System.out.println(getName()+ " is hunting");
 
 }
+
+    public String toString() {
+        return "WildlyAnimal{" +
+                "breed='" + getBreed() + '\'' +
+                ", name='" + getName() + '\'' +
+                ", size='" + getSize() + '\'' +
+                ", color='" + getColor() + '\'' +
+                ", age=" + getAge() +
+                ", gender=" + getGender() +
+                "isWild=" + isWild +
+                ", isFriendly=" + isFriendly +
+                ", isPlayable=" + isPlayable +
+                '}';
+    }
 }
 /*
 3. Create a sub class of Animal named WildAnimal:

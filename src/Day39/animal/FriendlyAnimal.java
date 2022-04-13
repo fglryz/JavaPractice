@@ -64,6 +64,20 @@ public class FriendlyAnimal  extends Animal {
     public void move() {
         super.move();
     }
+
+    public String toString() {
+        return "FriendlyAnimal{" +
+                "breed='" + getBreed() + '\'' +
+                ", name='" + getName() + '\'' +
+                ", size='" + getSize() + '\'' +
+                ", color='" + getColor() + '\'' +
+                ", age=" + getAge() +
+                ", gender=" + getGender() +
+                "isWild=" + isWild +
+                ", isFriendly=" + isFriendly +
+                ", isPlayable=" + isPlayable +
+                '}';
+    }
 }
 /*
 2. Create a sub class of Animal named FriendlyAnimal:
