@@ -1,7 +1,5 @@
 package Day39.animal;
 
-import Day39.Animal;
-
 public class WildlyAnimal extends Animal {
     private boolean isWild,isFriendly,isPlayable;
 

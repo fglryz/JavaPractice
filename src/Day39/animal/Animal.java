@@ -1,7 +1,6 @@
-package Day39;
+package Day39.animal;
 
-public class Animal {
-    private String breed, name, size, color;
+public class Animal {private String breed, name, size, color;
     private int age;
     private char gender;
 
@@ -19,19 +18,9 @@ public class Animal {
     }
 
     public void setName(String name) {
-        if (name == null) {
+        if (name == null||name.isBlank()||name.isEmpty()) {
             System.err.println("Invalid name");
             System.exit(1);
-        }
-        if (name.isBlank()) {
-            System.err.println("Invalid name");
-            System.exit(1);
-
-        }
-        if (name.isEmpty()) {
-            System.err.println("Invalid name");
-            System.exit(1);
-
         }
         this.name = name;
     }
@@ -49,19 +38,9 @@ public class Animal {
     }
 
     public void setColor(String color) {
-        if (color == null) {
+        if (color == null||color.isBlank()||color.isEmpty()) {
             System.err.println("Invalid color");
             System.exit(1);
-        }
-        if (color.isBlank()) {
-            System.err.println("Invalid color");
-            System.exit(1);
-
-        }
-        if (color.isEmpty()) {
-            System.err.println("Invalid color");
-            System.exit(1);
-
         }
         this.color = color;
     }
@@ -86,9 +65,8 @@ public class Animal {
         if(!(gender=='M')&&(!(gender=='F'))){
             System.err.println("it is invalid gender");
 
-        }
-        System.out.println("Invalid gender");
-        System.exit(1);
+        System.exit(1);}
+
         this.gender = gender;
     }
 
@@ -114,16 +92,16 @@ public class Animal {
         this.breed = breed;
     }
     public void eat(){
-        System.out.println(name+ "is eating");
+        System.out.println(name+ " is eating");
     }
     public void drink(){
-        System.out.println(name+ "is drinking");
+        System.out.println(name+ " is drinking");
     }
     public void sleep(){
-        System.out.println(name+ "is sleeping");
+        System.out.println(name+ " is sleeping");
     }
     public void move(){
-        System.out.println(name+ "is moving");
+        System.out.println(name+ " is moving");
     }
 
     public String toString() {
@@ -159,3 +137,4 @@ sleep()
 move()
 toString()
  */
+
