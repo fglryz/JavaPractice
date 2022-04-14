@@ -12,26 +12,9 @@ public class Cat extends FriendlyAnimal {
         System.out.println(getName()+ "is meoving");
     }
 
-    @Override
-    public void eat() {
-        super.eat();
+
     }
 
-    @Override
-    public void drink() {
-        super.drink();
-    }
-
-    @Override
-    public void sleep() {
-        super.sleep();
-    }
-
-    @Override
-    public void move() {
-        super.move();
-    }
-}
 
     /*2. Cat:
     Extra methods:

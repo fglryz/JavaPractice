@@ -62,6 +62,7 @@ public class Animal {private String breed, name, size, color;
     }
 
     public void setGender(char gender) {
+        gender=(""+gender).toLowerCase().charAt(0);
         if(!(gender=='M')&&(!(gender=='F'))){
             System.err.println("it is invalid gender");
 

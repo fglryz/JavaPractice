@@ -12,7 +12,7 @@ public class Dolphin extends FriendlyAnimal{
     }
 }
 /*
-olphin:
+dolphin:
         Extra methods:
         swim()
 public void scratch(){

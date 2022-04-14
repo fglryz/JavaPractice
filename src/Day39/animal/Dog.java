@@ -6,10 +6,8 @@ public class Dog extends FriendlyAnimal{
         super(breed, name, size, color, age, gender, isWild, isFriendly, isPlayable);
     }
 
-    @Override
-    public void eat() {
-        System.out.println(getName()+" is eating dog food");
-    }
+
+
     public void bark() {
         System.out.println(getName()+" is barking");
     }

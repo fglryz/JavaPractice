@@ -3,15 +3,15 @@ package Day39.Device;
 public class Device {
     private String brand,model;
     private double price;
-    private boolean hasBattery,hasPowerButton;
+    private static boolean hasBattery=true,hasPowerButton=true;
 
-    public Device(String brand, String model, double price, boolean hasBattery, boolean hasPowerButton) {
-        setBrand( brand);
+    public Device(String brand, String model, double price) {
+       setBrand( brand);
         setModel( model);
         setPrice(price);
-        setHasBattery(hasBattery);
-        setHasBattery(hasPowerButton);
     }
+
+
 
     public String getBrand() {
         return brand;
@@ -50,35 +50,24 @@ public class Device {
         this.price = price;
     }
 
-    public boolean isHasBattery() {
-        return hasBattery;
-    }
 
-    public void setHasBattery(boolean hasBattery) {
-        this.hasBattery = hasBattery;
-    }
 
-    public boolean isHasPowerButton() {
-        return hasPowerButton;
-    }
 
-    public void setHasPowerButton(boolean hasPowerButton) {
-        this.hasPowerButton = hasPowerButton;
-    }
+
+
     public void turnOn(){
-        System.out.println("it is opening");
+        System.out.println("Turning on "+brand+" "+model);
     }
     public void turnOff(){
-        System.out.println("it is closing");
+        System.out.println("Turning off "+brand+" "+model);
     }
 
     public String toString() {
         return "Device{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
-                ", price=" + price +
-                ", hasBattery=" + hasBattery +
-                ", hasPowerButton=" + hasPowerButton +
+                ", price=$" + price +
+
                 '}';
     }
 }

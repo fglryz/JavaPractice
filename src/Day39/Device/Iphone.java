@@ -2,10 +2,12 @@ package Day39.Device;
 
 public class Iphone extends Phone {
 
-    public Iphone(String model, double price, boolean hasBattery, boolean hasPowerButton) {
-        super("Apple", model, price, hasBattery, hasPowerButton);
 
+    public Iphone(String brand, String model, double price) {
+        super(brand, model, price);
     }
+
+
     public void faceTime(long phoneNumber){
         System.out.println(getBrand()+ " " + getModel() + " " + " is having a Face Time with phone number: " + phoneNumber);
     }
