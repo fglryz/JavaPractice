@@ -1,7 +1,7 @@
 package Day39.animal;
 
 public class FriendlyAnimal  extends Animal {
-    private static boolean isWild=false,isFriendly=true,isPlayable=true;
+    private static boolean isWild=false, isFriendly=true,isPlayable=true;
 
     public FriendlyAnimal(String breed, String name, String size, String color, int age, char gender, boolean isWild,
                           boolean isFriendly, boolean isPlayable) {
